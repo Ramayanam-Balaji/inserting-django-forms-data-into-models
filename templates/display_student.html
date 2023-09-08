@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert_student</title>
+</head>
+<body>
+    <center>
+    <table border="3px">
+        <tr>
+            <th>sname</th>
+            <th>sid</th>
+            <th>semail</th>
+        </tr>
+        {% for i in qso %}
+            <tr>
+                <td>{{i.sname}}</td>
+                <td>{{i.sid}}</td>
+                <td>{{i.semail}}</td>
+            </tr>
+        {% endfor %}
+    </center>
+    </table>
+</body>
+</html>
